@@ -1,0 +1,19 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED 
+@EndUserText.label: 'Contract Renewal Projection' 
+define root view entity ZCONTRACT_C_RENEWAL 
+provider contract transactional_query 
+as projection on ZCONTRACT_I_RENEWAL 
+
+{ 
+
+key ContractNo, 
+Supplier, 
+ContractStart, 
+ContractEnd, 
+ContractValue, 
+RenewalRequired, 
+AuthorizedBy, 
+AuthorizationDate 
+} 
+
+ 
