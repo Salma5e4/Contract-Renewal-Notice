@@ -1,0 +1,22 @@
+@EndUserText.label : 'REN' 
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE 
+@AbapCatalog.tableCategory : #TRANSPARENT 
+@AbapCatalog.deliveryClass : #A 
+@AbapCatalog.dataMaintenance : #RESTRICTED 
+ 
+define table zcontract_hdr { 
+ 
+  key client             : abap.clnt not null; 
+  key contract_no        : abap.char(10) not null; 
+ 
+      supplier           : abap.char(40); 
+      contract_start     : abap.dats; 
+      contract_end       : abap.dats; 
+      contract_value     : abap.dec(15,2); 
+      renewal_required   : abap.char(3); 
+      authorized_by      : abap.char(40); 
+      authorization_date : abap.dats; 
+ 
+} 
+
+ 
