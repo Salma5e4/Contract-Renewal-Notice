@@ -1,0 +1,11 @@
+
+
+@EndUserText.label: 'Contract Renewal Service' 
+
+define service ZCONTRACT_UI_RENEWAL { 
+
+expose ZCONTRACT_C_RENEWAL as ContractRenewal; 
+
+} 
+
+ 
