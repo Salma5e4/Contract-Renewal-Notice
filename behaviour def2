@@ -1,0 +1,23 @@
+managed implementation in class zbp_contract_i_renewal unique; 
+
+strict ( 2 ); 
+
+define behavior for ZCONTRACT_I_RENEWAL alias Contract 
+
+persistent table zcontract_hdr 
+
+lock master 
+
+authorization master ( none ) 
+
+{ 
+
+create; 
+
+update; 
+
+delete; 
+
+} 
+
+ 
