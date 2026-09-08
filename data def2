@@ -1,0 +1,30 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED 
+
+@EndUserText.label: 'CDS' 
+
+@Metadata.ignorePropagatedAnnotations: true 
+
+define root view entity ZCONTRACT_I_RENEWAL as select from zcontract_hdr 
+
+
+{// Make association public 
+
+key contract_no as ContractNo, 
+
+supplier as Supplier, 
+
+contract_start as ContractStart, 
+
+contract_end as ContractEnd, 
+
+contract_value as ContractValue, 
+
+renewal_required as RenewalRequired, 
+
+authorized_by as AuthorizedBy, 
+
+authorization_date as AuthorizationDate 
+
+} 
+
+ 
